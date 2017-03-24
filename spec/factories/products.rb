@@ -7,6 +7,8 @@ FactoryGirl.define do
         f.price 666.00
     end
     
-    
+    factory :invalid_product, parent: :product do |f|
+        f.title nil
+    end
     
 end
